@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Watches | Timeless Elegance</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+        /* Shop Section */
+        .container { padding: 50px 10%; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .price { color: var(--gold); font-weight: bold; font-size: 1.2rem; }
+
+        .buy-btn {
+            background: var(--dark);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .buy-btn:hover { background: var(--gold); }
+
+        /* About Section */
+        .about {
+            background: white;
+            padding: 80px 15%;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Pearl Watches</div>
+        <div>Shop | About | Contact</div>
+    </nav>
+
+    <header class="hero">
+        <h1>THE PEARL STANDARD</h1>
+        <p>Luxury is not a choice, it's a lifestyle.</p>
+    </header>
+
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Our Collection</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=500&q=80" alt="Minimalist Watch">
+                <h3>The Obsidian Pearl</h3>
+                <p class="price">$249.00</p>
+                <button class="buy-btn" onclick="alert('Added to cart!')">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=500&q=80" alt="Silver Watch">
+                <h3>Silver Oyster</h3>
+                <p class="price">$315.00</p>
+                <button class="buy-btn" onclick="alert('Added to cart!')">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=500&q=80" alt="Gold Watch">
+                <h3>Golden Horizon</h3>
+                <p class="price">$480.00</p>
+                <button class="buy-btn" onclick="alert('Added to cart!')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Pearl Watches</h2>
+        <p>
+            Founded on the principle that time is the ultimate luxury, <strong>Pearl Watches</strong> combines traditional craftsmanship with modern innovation. Our pieces are more than just instruments of time; they are symbols of sophistication and durability.
+        </p>
+        <p>
+            Each Pearl timepiece undergoes rigorous testing and is hand-assembled by master watchmakers. Whether you are diving into the deep blue or attending a high-stakes gala, our watches are designed to be your constant, reliable companion.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2026 Pearl Watches Co. | All Rights Reserved.
+    </footer>
+
+</body>
+  </html>
+  
